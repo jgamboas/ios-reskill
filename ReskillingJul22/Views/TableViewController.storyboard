@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Animales-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController storyboardIdentifier="tableView" id="Y6W-OH-hqX" customClass="AnimalsTableViewController" customModule="ReskillingJul22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Eif-w7-Uxv">
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="110" id="5MC-F3-FOJ" customClass="AnimalTableViewCell" customModule="ReskillingJul22" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="110"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="5MC-F3-FOJ" id="zEV-lD-mSn">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animalPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="5qA-jm-5ad">
+                                                    <rect key="frame" x="40" y="26" width="70" height="70"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="70" id="DbY-td-PaI"/>
+                                                        <constraint firstAttribute="width" constant="70" id="rPU-8B-v15"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IYk-6J-hCX">
+                                                    <rect key="frame" x="130" y="31" width="244" height="25"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0Tg-wn-HAI">
+                                                    <rect key="frame" x="130" y="61" width="264" height="23"/>
+                                                    <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5qA-jm-5ad" firstAttribute="top" secondItem="zEV-lD-mSn" secondAttribute="topMargin" constant="15" id="7TG-76-Qj7"/>
+                                                <constraint firstItem="IYk-6J-hCX" firstAttribute="leading" secondItem="5qA-jm-5ad" secondAttribute="trailing" constant="20" id="CpT-TF-v3U"/>
+                                                <constraint firstItem="0Tg-wn-HAI" firstAttribute="leading" secondItem="5qA-jm-5ad" secondAttribute="trailing" constant="20" id="CyD-or-Nj7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="IYk-6J-hCX" secondAttribute="trailing" constant="20" id="QBp-eY-O6x"/>
+                                                <constraint firstItem="IYk-6J-hCX" firstAttribute="top" secondItem="zEV-lD-mSn" secondAttribute="topMargin" constant="20" id="QkA-7m-iVr"/>
+                                                <constraint firstItem="0Tg-wn-HAI" firstAttribute="top" secondItem="IYk-6J-hCX" secondAttribute="bottom" constant="5" id="a9D-xV-3NF"/>
+                                                <constraint firstItem="5qA-jm-5ad" firstAttribute="leading" secondItem="zEV-lD-mSn" secondAttribute="leadingMargin" constant="20" id="eMG-JQ-4lp"/>
+                                                <constraint firstAttribute="trailing" secondItem="0Tg-wn-HAI" secondAttribute="trailing" constant="20" id="g6z-rB-3ux"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="animalImageView" destination="5qA-jm-5ad" id="BIk-Tf-R8V"/>
+                                            <outlet property="animalNameLabel" destination="IYk-6J-hCX" id="iJG-N8-jjl"/>
+                                            <outlet property="animalTypeLabel" destination="0Tg-wn-HAI" id="ceK-WQ-A2F"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Eif-w7-Uxv" secondAttribute="bottom" id="DjL-GF-TEK"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Eif-w7-Uxv" secondAttribute="trailing" id="kIf-6T-6Up"/>
+                            <constraint firstItem="Eif-w7-Uxv" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="nLx-lo-uPW"/>
+                            <constraint firstItem="Eif-w7-Uxv" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="tk2-LM-Dow"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Animales" id="q1d-yu-Udl">
+                        <barButtonItem key="rightBarButtonItem" title="Cerrar Sesión" id="DGx-dC-SXx">
+                            <connections>
+                                <action selector="cerrarSesionTapped:" destination="Y6W-OH-hqX" id="B9A-AW-Kpf"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="Eif-w7-Uxv" id="C9o-zT-xxa"/>
+                        <segue destination="dgO-07-Mh5" kind="show" identifier="animalDetail" id="whQ-k9-c4q"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="707" y="64"/>
+        </scene>
+        <!--Animal Detail View Controller-->
+        <scene sceneID="Okv-ri-uJL">
+            <objects>
+                <viewController id="dgO-07-Mh5" customClass="AnimalDetailViewController" customModule="ReskillingJul22" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vsE-gd-yQ5">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="animalPlaceholder" translatesAutoresizingMaskIntoConstraints="NO" id="Gou-T4-7C3">
+                                <rect key="frame" x="107" y="158" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="IZA-Ic-QI2"/>
+                                    <constraint firstAttribute="width" constant="200" id="Zz8-mK-Ice"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kry-z6-Vc2">
+                                <rect key="frame" x="20" y="378" width="374" height="30"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VOZ-cY-LIg">
+                                <rect key="frame" x="20" y="423" width="374" height="23"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="7aj-O7-fHM"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="VOZ-cY-LIg" firstAttribute="top" secondItem="kry-z6-Vc2" secondAttribute="bottom" constant="15" id="DL1-MJ-eyC"/>
+                            <constraint firstItem="kry-z6-Vc2" firstAttribute="leading" secondItem="7aj-O7-fHM" secondAttribute="leading" constant="20" id="Fbw-n7-QU1"/>
+                            <constraint firstItem="VOZ-cY-LIg" firstAttribute="leading" secondItem="7aj-O7-fHM" secondAttribute="leading" constant="20" id="QPA-5y-vcE"/>
+                            <constraint firstItem="7aj-O7-fHM" firstAttribute="trailing" secondItem="VOZ-cY-LIg" secondAttribute="trailing" constant="20" id="U3V-oO-sJZ"/>
+                            <constraint firstItem="Gou-T4-7C3" firstAttribute="top" secondItem="7aj-O7-fHM" secondAttribute="top" constant="70" id="Wrr-Wr-JV6"/>
+                            <constraint firstItem="7aj-O7-fHM" firstAttribute="trailing" secondItem="kry-z6-Vc2" secondAttribute="trailing" constant="20" id="bXr-AF-fYA"/>
+                            <constraint firstItem="kry-z6-Vc2" firstAttribute="top" secondItem="Gou-T4-7C3" secondAttribute="bottom" constant="20" id="tLo-gi-hwY"/>
+                            <constraint firstItem="Gou-T4-7C3" firstAttribute="centerX" secondItem="7aj-O7-fHM" secondAttribute="centerX" id="zHj-yo-6CW"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="SND-uE-tjq"/>
+                    <connections>
+                        <outlet property="animalImageView" destination="Gou-T4-7C3" id="oF5-MT-gKz"/>
+                        <outlet property="animalNameLabel" destination="kry-z6-Vc2" id="N7u-PS-UgB"/>
+                        <outlet property="animalTypeLabel" destination="VOZ-cY-LIg" id="Wa6-Oa-GXn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kFe-Lf-KX8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1467" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="twV-Xm-cUC">
+            <objects>
+                <navigationController storyboardIdentifier="tableViewController" automaticallyAdjustsScrollViewInsets="NO" id="LA1-tr-faV" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="87D-eT-Ffe">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="KtK-l0-nHk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YiA-Wa-QHC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-58" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="animalPlaceholder" width="139" height="133"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
